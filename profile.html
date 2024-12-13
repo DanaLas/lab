@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в профиль</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключите ваш общий CSS файл -->
+    <style>
+        /* Стили для страницы входа */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0; /* Отступы между полями */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Включаем padding в ширину */
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(83, 4, 28, 0.84);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: rgba(83, 4, 28, 0.84);
+        }
+
+        .login-container .footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Вход в профиль</h2>
+    <form id="login-form">
+        <input type="text" placeholder="Логин" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit">Войти</button>
+    </form>
+    <div class="footer">
+        <p>Еще нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+    </div>
+</div>
+<script>
+    // Код для обработки формы можно добавить здесь
+    const form = document.getElementById('login-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Отменяем стандартное поведение формы
+
+        const username = form.querySelector('input[type="text"]').value;
+        const password = form.querySelector('input[type="password"]').value;
+
+        // Здесь можно добавить логику для проверки логина и пароля
+        alert(`Логин: ${username}\nПароль: ${password}`);
+    });
+</script>
+</body>
+</html>

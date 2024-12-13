@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow - Магазин Косметики</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">Glow</div>
+  <nav>
+    <ul>
+      <li><a href="products.html">Каталог</a></li>
+      <li><a href="index.html#about">О нас</a></li> <!-- Изменено -->
+      <li><a href="index.html#contacts">Контакты</a></li> <!-- Изменено -->
+    </ul>
+  </nav>
+  <div class="header-buttons">
+    <a href="cart.html" class="button cart-btn">Корзина</a>
+    <a href="profile.html" class="button profile-btn">Вход в профиль</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="hero-image-container">
+        <img src="images/banner1.jpg" alt="Баннер 1" class="hero-image">
+        <div class="hero-text">
+          <h1>Сияй Ярко</h1>
+          <p>Откройте для себя мир красоты с Glow and Grace!</p>
+          <a href="products.html" class="btn">Начать шопинг</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="images/banner2.jpg" alt="Баннер 2" class="hero-image">
+        <div class="hero-text">
+          <h1>Вдохновляйся</h1>
+          <p>Откройте для себя новые ароматы!</p>
+          <a href="products.html" class="btn">Начать шопинг</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="images/banner3.jpg" alt="Баннер 3" class="hero-image">
+        <div class="hero-text">
+          <h1>Будь Уникальным</h1>
+          <p>Найди свой стиль с Glow!</p>
+          <a href="products.html" class="btn">Начать шопинг</a>
+        </div>
+      </div>
+      <div class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</div>
+      <div class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</div>
+    </div>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <h2>Хиты Продаж</h2>
+    <div class="products">
+      <div class="product">
+        <img src="images/cream.jpg" alt="Косметический Крем" class="product-image">
+        <p>Косметический Крем</p>
+        <p class="price">
+          <span class="old-price">Цена: 1000 руб.</span>
+          <span class="new-price">800 руб.</span>
+        </p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="product">
+        <img src="images/mask.jpg" alt="Маска для Лица" class="product-image">
+        <p>Маска для Лица</p>
+        <p class="price">
+          <span class="old-price">Цена: 500 руб.</span>
+          <span class="new-price">400 руб.</span>
+        </p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="product">
+        <img src="images/lipstick.jpg" alt="Помада" class="product-image">
+        <p>Помада</p>
+        <p class="price">Цена: 800 руб.</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="product">
+        <img src="images/perfume.jpg" alt="Парфюм" class="product-image">
+        <p>Парфюм</p>
+        <p class="price">Цена: 3000 руб.</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="product">
+        <img src="images/scrub.jpg" alt="Скраб для Тела" class="product-image">
+        <p>Скраб для Тела</p>
+        <p class="price">Цена: 1200 руб.</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="promo-banner">
+      <h3 class="promo-text">Скидки до 50% на новинки! Не пропустите!</h3>
+      <a href="discounts.html" class="btn">Смотреть предложения</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <h2>1000+</h2>
+        <p>Счастливых клиентов</p>
+      </div>
+      <div class="stat-item">
+        <h2>500+</h2>
+        <p>Косметических товаров</p>
+      </div>
+      <div class="stat-item">
+        <h2>24/7</h2>
+        <p>Поддержка клиентов</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="new-arrivals" class="new-arrivals">
+    <h2>Новинки</h2>
+    <div class="products">
+      <div class="product">
+        <img src="images/new_product1.jpg" alt="Новый Продукт 1" class="product-image">
+        <p>Новый Продукт 1</p>
+        <p class="price">Цена: 1200 руб.</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="product">
+        <img src="images/new_product2.jpg" alt="Новый Продукт 2" class="product-image">
+        <p>Новый Продукт 2</p>
+        <p class="price">Цена: 1500 руб.</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="product">
+        <img src="images/new_product3.jpg" alt="Новый Продукт 3" class="product-image">
+        <p>Новый Продукт 3</p>
+        <p class="price">Цена: 900 руб.</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>О нас</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Мы - команда профессионалов, стремящихся сделать мир более красивым и доступным для каждого.
+          Наша компания, Glow, была основана с целью предоставить вам лучшие косметические продукты,
+          которые помогут вам раскрыть вашу естественную красоту.
+        </p>
+        <p>
+          В нашем ассортименте вы найдете только высококачественные товары, прошедшие строгий отбор.
+          Мы сотрудничаем с известными брендами и новыми талантами в индустрии красоты, чтобы предложить
+          вам самые актуальные и эффективные решения.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/about.jpg" alt="О нас" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <h2>Контакты</h2>
+    <p>Email: contact@glow.com</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Glow. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

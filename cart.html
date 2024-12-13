@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина - Glow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a href="index.html" class="logo">Glow</a>
+  <nav>
+    <ul>
+      <li><a href="products.html">Каталог</a></li>
+      <li><a href="index.html#about">О нас</a></li>
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="header-buttons">
+    <a href="cart.html" class="button cart-btn">Корзина</a>
+    <a href="profile.html" class="button profile-btn">Вход в профиль</a>
+  </div>
+</header>
+
+<main>
+  <section class="cart">
+    <h2>Корзина</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div id="total-price" class="total-price">Общая стоимость: 0 руб.</div>
+    <button class="btn checkout-btn" onclick="location.href='checkout.html'">Оформить заказ</button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Glow. Все права защищены.</p>
+</footer>
+
+<script src="cart.js"></script>
+</body>
+</html>
